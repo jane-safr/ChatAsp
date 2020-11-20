@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Простой чат</title>
+</head>
+<body>
+    <h1>Добро пожаловать в чат!</h1>
+    <p id="stateLabel">Готов к подключению...</p>
+
+    <input type="text" id="user" />
+    <input type="text" id="message" />
+    <input type="button" value="Отправить" id="send" />
+    <div id='messages'></div>
+
+    <script type="text/javascript">
+                //var socket,
+                //    $txt = document.getElementById('message'),
+                //    $user = document.getElementById('user'),
+                //    $messages = document.getElementById('messages');
+                //var stateLabel = document.getElementById("stateLabel");
+
+                //if (typeof (WebSocket) !== 'undefined') {
+                //    socket = new WebSocket("ws://sql_jane/ChatASP/ChatHandler.ashx");
+                //} else {
+                //    socket = new MozWebSocket("ws://sql_jane/ChatASP/ChatHandler.ashx");
+                //}
+
+                //function updateState() {
+                //    function disable() {
+                //        //sendMessage.disabled = true;
+                //        //sendButton.disabled = true;
+                //        //closeButton.disabled = true;
+                //    }
+                //    function enable() {
+                //        //sendMessage.disabled = false;
+                //        //sendButton.disabled = false;
+                //        //closeButton.disabled = false;
+                //    }
+
+                //    //connectionUrl.disabled = true;
+                //    //connectButton.disabled = true;
+
+                //    if (!socket) {
+                //        disable();
+                //    } else {
+                //        switch (socket.readyState) {
+                //            case WebSocket.CLOSED:
+                //                stateLabel.innerHTML = "Closed";
+                //                disable();
+                //                //connectionUrl.disabled = false;
+                //                //connectButton.disabled = false;
+                //                break;
+                //            case WebSocket.CLOSING:
+                //                stateLabel.innerHTML = "Closing...";
+                //                disable();
+                //                break;
+                //            case WebSocket.CONNECTING:
+                //                stateLabel.innerHTML = "Connecting...";
+                //                disable();
+                //                break;
+                //            case WebSocket.OPEN:
+                //                stateLabel.innerHTML = "Open";
+                //                enable();
+                //                break;
+                //            default:
+                //                stateLabel.innerHTML = "Unknown WebSocket State: " + htmlEscape(socket.readyState);
+                //                disable();
+                //                break;
+                //        }
+                //    }
+                //}
+                //socket.onmessage = function (msg) {
+                //    updateState();
+                //    var $el = document.createElement('p');
+                //    $el.innerHTML = msg.data;
+                //    $messages.appendChild($el);
+                //};
+
+                //socket.onclose = function (event) {
+                //    updateState();
+                //    alert('Мы потеряли её. Пожалуйста, обновите страницу');
+                //};
+                //socket.onerror = updateState;
+
+                //document.getElementById('send').onclick = function () {
+                //    socket.send($user.value + ' : ' + $txt.value);
+                //    $txt.value = '';
+                //};
+    </script>
+    <script src="./lib/app.js"></script>
+</body>
+</html>
