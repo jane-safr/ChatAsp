@@ -1,6 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<parameters>
-  <parameter name="smrConnectionString-Web.config Connection String" description="smrConnectionString Строка подключения в web.config, используемая приложением для доступа к базе данных." defaultValue="Data Source=sql-a0;Initial Catalog=smr;User ID=prog;Password=prog" tags="SqlConnectionString">
-    <parameterEntry kind="XmlFile" scope="C:\\MVC\\ChatASP\\ChatASP\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='smrConnectionString']/@connectionString" />
-  </parameter>
-</parameters>
